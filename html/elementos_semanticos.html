@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Semânticos do HTML5</title>
+</head>
+<body>
+    <!--
+        Esta é a estrutura correta de uma construção de página. Para ocorrer mudanças visuais as alterações serão realizadas no CSS.
+    -->
+    <header> <!-- Cabeçalho: Local onde, geralmente, é inserido a barra de navegação da página -->
+        <nav>Barra de Navegação.</nav>
+    </header>
+
+    <main> <!-- Tag utilizada para inserir o conteúdo principal da página -->
+        <h4>Conteúdo Principal.</h4>
+        
+        <!--
+            A tag section cria sessões na página.
+            O atributo id é único, não podendo ser utilizado o mesmo nome inserido na página.
+        -->
+        <section id="about-me">
+            Sobre mim.
+            <figure> <!-- Tag utilizada para envolver imagens -->
+                <img src="https://avatars.githubusercontent.com/u/110205201?v=4" alt="Juliana Souto - Imagem de Perfil" width="260">
+
+                <figcaption> <!-- Tag utilizada para criar legenda para a imagem -->
+                    Foto de Perfil do GitHub - Juliana Souto
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="portfolio">
+            Portfólio.
+        </section>
+
+        <section id="blog">
+            Blog em construção.
+            <!--
+                A tag article é utilizada para a criação de posts.
+                A tag article também cria um novo escopo, podendo utilizar as tags header, main e footer novamente.
+            -->
+            <article>
+                <header>Pode ser inserido a imagem do post.</header>
+
+                <main>Pode inserir título, subtítulo, resumo do post.</main>
+
+                <footer>pode inserir o nome do autor, a data de publicação.</footer>
+            </article>
+        </section>
+
+    </main>
+
+    <aside> <!-- Tag utilizada para inserir uma barra lateral. Essa tag pode ser utilizada dentro ou fora da tag main -->
+        Conteúdo da Barra Lateral.
+    </aside>
+
+    <footer> <!-- Tag utilizada para inserir o rodapé da página -->
+        Desenvolvido por Juliana Souto
+    </footer>
+</body>
+</html>
